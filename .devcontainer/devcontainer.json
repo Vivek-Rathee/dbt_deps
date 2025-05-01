@@ -1,0 +1,13 @@
+{
+  "name": "dbt-duckdb-dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [],
+  "forwardPorts": [],
+  "postCreateCommand": "dbt --version && dbt deps || true",
+  "remoteUser": "root"
+}
